@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_pp_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_primary"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@id/img_pp_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textFontWeight="600"
+            android:layout_centerVertical="true"
+            android:text="aldisidik"/>
+
+        <Button
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_heart_white"
+            android:drawablePadding="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/seg_rect_radius_large"
+            android:text="500"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="100dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seg_white"
+                android:drawableLeft="@drawable/ic_search_secondary"
+                android:drawablePadding="10dp"
+                android:hint="apa yang kamu cari?"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textSecondary" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perlengkapan"
+                        android:textColor="@color/textPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="selengkapanya >>>"
+                        android:textColor="@color/textSecondary"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:textSize="5pt"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:background="@drawable/seg_white"
+                        android:textAllCaps="false"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="makanan"
+                        android:textColor="@color/textPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:textSize="5pt"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:background="@drawable/seg_white"
+                        android:textAllCaps="false"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="mainan"
+                        android:textColor="@color/textPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:textSize="5pt"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:background="@drawable/seg_white"
+                        android:textAllCaps="false"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="obat"
+                        android:textColor="@color/textPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:textSize="5pt"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:background="@drawable/seg_white"
+                        android:textAllCaps="false"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="aksesoris"
+                        android:textColor="@color/textPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Layanan"
+                        android:textColor="@color/textPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="selengkapanya >>>"
+                        android:textColor="@color/textSecondary"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/seg_white"
+                        android:textColor="@color/textPrimary"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="20dp"
+                        android:text="mainan"
+                        android:padding="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/seg_white"
+                        android:textColor="@color/textPrimary"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="20dp"
+                        android:text="mainan"
+                        android:padding="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/seg_white"
+                        android:textColor="@color/textPrimary"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="20dp"
+                        android:text="mainan"
+                        android:padding="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/seg_white"
+                        android:textColor="@color/textPrimary"
+                        android:drawableTop="@drawable/ic_inbox_primary"
+                        android:drawablePadding="20dp"
+                        android:text="mainan"
+                        android:padding="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

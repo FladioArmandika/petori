@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.PesananFragment">
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+
+
+
+        <TextView
+            android:layout_toRightOf="@id/img_pp_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textFontWeight="bold"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:text="Pesananmu"/>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="100dp">
+
+            <fragment
+                android:id="@+id/pesanan_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="io.aigb.hewanku.fragments.PesananItemFragment"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
