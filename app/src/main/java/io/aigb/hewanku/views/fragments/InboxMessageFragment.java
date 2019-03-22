@@ -1,4 +1,4 @@
-package io.aigb.hewanku.fragments;
+package io.aigb.hewanku.views.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -13,12 +13,12 @@ import io.aigb.hewanku.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link PesananItemFragment.OnFragmentInteractionListener} interface
+ * {@link InboxMessageFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link PesananItemFragment#newInstance} factory method to
+ * Use the {@link InboxMessageFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PesananItemFragment extends Fragment {
+public class InboxMessageFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +30,7 @@ public class PesananItemFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public PesananItemFragment() {
+    public InboxMessageFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +40,11 @@ public class PesananItemFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PesananItemFragment.
+     * @return A new instance of fragment InboxMessageFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PesananItemFragment newInstance(String param1, String param2) {
-        PesananItemFragment fragment = new PesananItemFragment();
+    public static InboxMessageFragment newInstance(String param1, String param2) {
+        InboxMessageFragment fragment = new InboxMessageFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +65,7 @@ public class PesananItemFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pesanan_item, container, false);
+        return inflater.inflate(R.layout.fragment_inbox_message, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

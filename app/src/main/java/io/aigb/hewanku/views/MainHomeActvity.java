@@ -1,7 +1,5 @@
-package io.aigb.hewanku;
+package io.aigb.hewanku.views;
 
-import android.annotation.SuppressLint;
-import android.content.ClipData;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,21 +8,22 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-import io.aigb.hewanku.fragments.HomeFragment;
-import io.aigb.hewanku.fragments.InboxFragment;
-import io.aigb.hewanku.fragments.PesananFragment;
-import io.aigb.hewanku.fragments.PesananItemFragment;
-import io.aigb.hewanku.fragments.ProfilFragment;
+import io.aigb.hewanku.R;
+import io.aigb.hewanku.views.fragments.HomeFragment;
+import io.aigb.hewanku.views.fragments.InboxFragment;
+import io.aigb.hewanku.views.fragments.InboxMessageFragment;
+import io.aigb.hewanku.views.fragments.PesananFragment;
+import io.aigb.hewanku.views.fragments.PesananItemFragment;
+import io.aigb.hewanku.views.fragments.ProfilFragment;
 
 public class MainHomeActvity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,
         InboxFragment.OnFragmentInteractionListener,
         PesananFragment.OnFragmentInteractionListener,
         ProfilFragment.OnFragmentInteractionListener,
-        PesananItemFragment.OnFragmentInteractionListener {
+        PesananItemFragment.OnFragmentInteractionListener,
+        InboxMessageFragment.OnFragmentInteractionListener {
 
     private TextView mTextMessage;
 

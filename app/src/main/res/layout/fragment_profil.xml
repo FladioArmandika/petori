@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProfilFragment">
+    android:orientation="vertical"
+    tools:context=".views.fragments.ProfilFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/img_pp_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/shape_oval_white"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:layout_below="@id/img_pp_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="aldisidik"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seg_white"
+            android:drawableLeft="@drawable/ic_search_secondary"
+            android:textSize="20sp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/textPrimary"
+            android:textAlignment="textStart"
+            android:text="Edit Profil"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seg_white"
+            android:drawableLeft="@drawable/ic_inbox_primary"
+            android:textSize="20sp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textStart"
+            android:text="Keluar"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

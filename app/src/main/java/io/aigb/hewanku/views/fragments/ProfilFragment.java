@@ -1,4 +1,4 @@
-package io.aigb.hewanku.fragments;
+package io.aigb.hewanku.views.fragments;
 
 import android.content.Context;
 import android.net.Uri;

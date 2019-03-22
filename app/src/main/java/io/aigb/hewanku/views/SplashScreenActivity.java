@@ -1,11 +1,11 @@
-package io.aigb.hewanku;
+package io.aigb.hewanku.views;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import io.aigb.hewanku.controllers.LoginActivity;
+import io.aigb.hewanku.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

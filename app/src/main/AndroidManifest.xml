@@ -10,12 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
-            android:name=".MainHomeActvity"
+            android:name=".views.MainHomeActvity"
             android:label="@string/title_activity_main_home_actvity"></activity>
-        <activity android:name=".controllers.LoginActivity" />
+        <activity android:name=".views.LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".views.SplashScreenActivity"
             android:theme="@style/SplashScreenStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
