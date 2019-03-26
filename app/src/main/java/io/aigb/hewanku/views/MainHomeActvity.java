@@ -8,6 +8,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.ViewTreeObserver;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import io.aigb.hewanku.R;
@@ -30,6 +33,9 @@ public class MainHomeActvity extends AppCompatActivity implements HomeFragment.O
     BottomNavigationView bottomNav;
     BottomNavigationItemView navHome, navPesanan, navInbox, navProfil;
 
+
+    ScrollView scrollViewHome;
+    RelativeLayout headerBarHome;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -85,12 +91,26 @@ public class MainHomeActvity extends AppCompatActivity implements HomeFragment.O
         navProfil = (BottomNavigationItemView) findViewById(R.id.navigation_profil);
         bottomNav.setItemIconTintList(null);
 
+
+        scrollViewHome = (ScrollView) findViewById(R.id.scrollview_home);
+        headerBarHome = (RelativeLayout) findViewById(R.id.headbar_home);
+
+
+
         loadFragment(new HomeFragment());
+
+        /////////////////////
+        //HOME
+        ////////////////////
+
+
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
+
 
     @Override
     public void onFragmentInteraction(Uri uri) {

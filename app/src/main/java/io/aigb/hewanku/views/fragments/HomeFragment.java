@@ -4,9 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 import io.aigb.hewanku.R;
 
@@ -29,6 +34,10 @@ public class HomeFragment extends android.support.v4.app.Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+//
+    ScrollView scrollViewHome;
+    RelativeLayout headerBarHome;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -59,13 +68,33 @@ public class HomeFragment extends android.support.v4.app.Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View rootView = inflater.inflate(R.layout.fragment_home, null);
+
+        headerBarHome = rootView.findViewById(R.id.headbar_home);
+        scrollViewHome = rootView.findViewById(R.id.scrollview_home);
+        scrollViewHome.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+            @Override
+            public void onScrollChanged() {
+                if(scrollViewHome.getChildAt(0).getTop()
+                        <= (scrollViewHome.getHeight() + scrollViewHome.getScrollY())) {
+                } else {
+                }
+            }
+        });
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, null);
+        return rootView;
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -90,6 +119,12 @@ public class HomeFragment extends android.support.v4.app.Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
     }
 
     /**

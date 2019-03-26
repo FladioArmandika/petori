@@ -9,6 +9,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/headbar_home"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,6 +51,7 @@
     </RelativeLayout>
 
     <ScrollView
+        android:id="@+id/scrollview_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

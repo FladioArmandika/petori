@@ -22,7 +22,7 @@
         <TextView
             android:textAlignment="center"
             android:layout_marginTop="20dp"
-            android:textSize="25sp"
+            android:textSize="8pt"
             android:layout_below="@id/img_pp_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,11 +42,11 @@
         android:paddingLeft="@dimen/activity_horizontal_margin">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/seg_white"
             android:drawableLeft="@drawable/ic_search_secondary"
-            android:textSize="20sp"
+            android:textSize="8pt"
             android:drawablePadding="20dp"
             android:padding="20dp"
             android:textColor="@color/textPrimary"
@@ -54,11 +54,12 @@
             android:text="Edit Profil"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/seg_white"
             android:drawableLeft="@drawable/ic_inbox_primary"
-            android:textSize="20sp"
+            android:textSize="8pt"
             android:drawablePadding="20dp"
             android:padding="20dp"
             android:textColor="@color/colorPrimary"
